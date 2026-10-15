@@ -1,7 +1,7 @@
-📌 **Project Title:** **THE PROJECTING AN AUTONOMOUS ROBOT OF THE RESCUE MAZE CATEGORY**  
-📅 **Project Timeline:** **August 2019 – October 2021**  
-🎥 YouTube Demo: [Link: https://youtu.be/3sTD7d_HzC4](https://youtu.be/3sTD7d_HzC4)  
-📦 GitHub Source Code: <https://github.com/IvanSicaja/2019.08.01_GitHub_The-Projecting-an-Autonomous-Robot-of-the-Rescue-Maze-Category>  
+📌 **Project Title:** **AUTO BRIGHTNESS – SUNRISE/SUNSET MONITOR CONTROL**  
+📅 **Project Timeline:** **To be added**  
+🎥 YouTube Demo: To be added  
+📦 GitHub Source Code: To be added  
 
 ---
 
@@ -15,7 +15,7 @@
 
 ### 💡 Core Challenge This Project Resolves:
 
-Designing and engineering a fully integrated autonomous rescue robot capable of real-time perception, decision-making, navigation, victim detection, and mechanical adaptability in unpredictable maze environments under hardware and computational constraints.
+Automatically adjusting **Windows monitor brightness** according to calculated **sunrise/sunset times**, avoiding repetitive manual brightness changes while running quietly in the background.
 
 ---
 
@@ -26,105 +26,67 @@ Designing and engineering a fully integrated autonomous rescue robot capable of 
 ├── Software Engineering
 │ ├── Software / Frameworks / Libraries
 │ │ ├── Python
-│ │ ├── C++ (Arduino firmware development)
-│ │ ├── TensorFlow
-│ │ ├── Keras
-│ │ ├── OpenCV
-│ │ ├── scikit-learn
-│ │ ├── Pandas
-│ │ ├── Git / GitHub
-│ │ ├── Linux
-│ │ ├── Visual Studio Code
-│ │ └── Turtle (Python – maze visualization & mapping)
+│ │ ├── astral (astronomical sunrise/sunset calculation)
+│ │ ├── screen-brightness-control (monitor brightness control)
+│ │ ├── datetime / timezone (time-based scheduling)
+│ │ ├── logging / RotatingFileHandler (rotating log files)
+│ │ ├── ctypes (Windows mutex / single-instance check)
+│ │ ├── os / sys / time (paths, process control, periodic checks)
+│ │ └── PyInstaller (optional Windows executable packaging)
 │ │
 │ ├── Hardware
-│ │ ├── Raspberry Pi 4B
-│ │ ├── Teensy 3.5
-│ │ └── Arduino
+│ │ ├── Windows PC
+│ │ └── Brightness-controllable internal or external display
 │ │
 │ └── Skills
-│   ├── Embedded software development & firmware programming
-│   ├── Real-time sensor data acquisition & processing
-│   ├── Computer vision pipeline architecture
-│   ├── AI model training, validation & optimization
-│   ├── Implementation of search algorithms (BFS, DFS, A*)
-│   ├── Linux-based robotics workflow management
-│   ├── System-level debugging & integration
-│   ├── Performance optimization under limited computational resources
-│   └── Multi-controller distributed architecture design
+│   ├── Background process development
+│   ├── Time-based application logic
+│   ├── Astronomical event calculations
+│   ├── Windows API integration
+│   ├── Single-instance process control
+│   ├── Monitor brightness automation
+│   ├── Exception handling and diagnostic logging
+│   └── Application packaging
 │
 ├── Mechanical Engineering
 │ ├── Software / Frameworks / Libraries
-│ │ └── Autodesk Fusion 360 (CAD/CAM design & simulation)
+│ │ └── Not applicable (software-only project)
 │ │
 │ ├── Hardware / Hardware Tools
-│ │ └── Ultimaker 3+ (3D printing system)
+│ │ └── Not applicable (no mechanical components)
 │ │
 │ └── Skills
-│   ├── Full robot chassis design & assembly modeling
-│   ├── Drivetrain engineering & torque optimization
-│   ├── 25-degree incline climbing capability design
-│   ├── Independent axle maneuvering mechanism
-│   ├── Structural strength & grip optimization
-│   ├── 3D printing parameter optimization (density, material selection)
-│   ├── Prototype validation & mechanical stress evaluation
-│   └── Mechanical-electrical integration alignment
+│   └── Not applicable (no mechanical design or fabrication)
 │
 ├── Electrical Engineering
 │ ├── Software / Frameworks / Libraries
-│ │ └── Arduino IDE
+│ │ └── screen-brightness-control
 │ │
 │ ├── Hardware Components
-│ │ ├── Teensy 3.5
-│ │ ├── Raspberry Pi 4B
-│ │ ├── Arduino boards
-│ │ ├── Optical cameras (2x)
-│ │ ├── Thermal cameras (2x)
-│ │ ├── IR LiDAR sensors (6x)
-│ │ ├── Color sensor
-│ │ ├── Wheel encoders
-│ │ └── Motors & motor drivers
+│ │ ├── Windows computer
+│ │ └── Compatible display / monitor
 │ │
 │ ├── Hardware Tools
-│ │ └── Power supply
+│ │ └── No additional hardware tools required
 │ │
 │ ├── Communication Protocols
-│ │ ├── UART / Serial
-│ │ ├── I2C
-│ │ ├── SPI
-│ │ └── USB
+│ │ └── Monitor control via supported system/display interfaces
 │ │
 │ └── Skills
-│   ├── Sensor calibration & integration
-│   ├── Signal filtering & noise reduction
-│   ├── Encoder-based position tracking systems
-│   ├── Multi-board communication architecture
-│   ├── Electrical system wiring & validation
-│   ├── Hardware troubleshooting & diagnostics
-│   ├── Power management & distribution optimization
-│   └── Embedded hardware-software synchronization
+│   ├── Software-controlled display brightness
+│   ├── Display compatibility assessment
+│   └── Hardware/software interaction troubleshooting
 │
 ├── Data Science & Artificial Intelligence
 │ ├── Software / Frameworks / Libraries
-│ │ ├── TensorFlow
-│ │ ├── Keras
-│ │ ├── OpenCV
-│ │ ├── Pandas
-│ │ └── scikit-learn
+│ │ └── astral (deterministic astronomy calculations; not AI)
 │ │
 │ ├── Hardware
-│ │ └── (Camera systems & sensors integrated via Raspberry Pi 4B)
+│ │ └── No specialized AI/data-science hardware
 │ │
 │ └── Skills
-│   ├── Convolutional Neural Network (CNN) architecture design
-│   ├── OCR model training & evaluation (77.54% accuracy target)
-│   ├── Image preprocessing (grayscale, Gaussian blur, threshold, dilation)
-│   ├── Edge detection & dynamic noise filtering
-│   ├── Custom object detection scripting
-│   ├── Maze mapping & graph representation
-│   ├── Shortest-path computation using BFS, DFS, A*
-│   ├── Data transformation for performance acceleration (.CSV optimization)
-│   └── Overfitting prevention & model generalization strategies
+│   ├── Time and coordinate-based calculations
+│   └── No machine-learning or AI features implemented
 │
 └── Research & Development Engineering
   ├── Software / Frameworks / Libraries
@@ -134,118 +96,154 @@ Designing and engineering a fully integrated autonomous rescue robot capable of 
   │ └── Integrated within sections above
   │
   └── Skills
-    ├── System architecture design from concept to prototype
-    ├── Hardware feasibility analysis & component selection
-    ├── Iterative testing & calibration cycles
-    ├── Cross-disciplinary engineering coordination
-    ├── Technical documentation & publication preparation
-    ├── Experimental validation & benchmarking
-    └── End-to-end robotics system development
+    ├── Configurable time offsets and brightness levels
+    ├── Event-based day/night state calculation
+    ├── Repeatable 60-second control-loop execution
+    ├── Fault-tolerant operation through exception handling
+    └── Structured diagnostics and application iteration
 ```
 
 ---
 
 ### 📋 Core System Capabilities - List Only:
 
-- **Autonomous character recognition (OCR)**
-- **Autonomous color recognition**
-- **Partially autonomous drive in the maze** (need a lot of testing and calibration for fully autonomous drive and labyrinth mapping)
-- **Thermal victim recognition**
-- **Package delivery**
-- **Ability to master a climb of 25 degrees** (all-wheel drive, strong grip)
-- **Independent axle maneuvering**
-- **Remembering positions (encoders)**...
+- **Automatically calculates sunrise and sunset** from configured coordinates and date
+- **Sets daytime and nighttime monitor brightness** (default: 100% / 20%)
+- **Supports sunrise/sunset offsets** (default: sunrise +0 h; sunset −1 h)
+- **Rechecks brightness every 60 seconds** while running
+- **Avoids unnecessary brightness updates** when already at the target level
+- **Runs without a graphical interface** (background operation)
+- **Prevents duplicate instances on Windows** using a named mutex
+- **Logs changes and errors** to a rotating log file
+- **Can be packaged as a Windows executable** using PyInstaller
 
 ---
 
 ### 🧠️ How It Works - Core System Capabilities Workflow:
 
-The project is very complex and demands knowledge in different areas (**3D modeling, 3D printing, advanced programming skills in different languages, researching ability, expert knowledge of every electrical component working principles, image processing, cause-and-effect analysis...**)  
-The brains of the robot are **microcontroller Teensy 3.5** and **Raspberry Pi 4B**.
+The application reads configured **latitude/longitude**, calculates daily **sunrise and sunset** with **astral**, selects a **day/night brightness target**, and updates the display when necessary. The calculation runs locally; **automatic location detection is not implemented**.  
+The core is a **Python background loop** using **astral** and **screen-brightness-control**.
 
-The robot is also equipped with:
+The application also includes:
 
-- **2x optical camera**
-- **2x thermal camera**
-- **6x IR lidar sensor**
-- **1x color sensor**... (more can be found at GitHub in my publication paper: _The projecting an autonomous robot of the rescue maze category.pdf_ -> Caption 4.3)
+- **Day/night brightness settings:** `DAY_BRIGHTNESS = 100`, `NIGHT_BRIGHTNESS = 20`
+- **Time offsets:** `DAY_OFFSET = 0 h`, `NIGHT_OFFSET = −1 h`
+- **Check interval:** `CHECK_INTERVAL = 60` seconds
+- **Log location:** `%LOCALAPPDATA%\AutoBrightness\log.txt`
 
-**Optical character recognition:**  
-In this project, we trained a **Convolutional Neural Network (CNN)** on an image examples with the Python module **TensorFlow**. Images are converted into **.CSV file** because of speeder processing. The input image is filtered with different filters (**Grayscale, Gaussian Blur, Threshold, Binary, Dilatation**) in order to speed up image processing (replace three color channels with one channel, **RGB -> grayscale**). Reduce noises (the dust on the live video capturing). Getting smooth and sharp character edges is the most important characteristic for successful character recognition. The trained model accuracy is **77.54%** which is a target because we want to get high reliability and avoid CNN overfitting.
+**Sunrise/sunset calculation:**  
+The `astral` library computes sunrise and sunset from the configured coordinates, date, and UTC-aware timestamps. The code considers yesterday, today, and tomorrow to identify the **most recent brightness transition**. No online sunrise/sunset API is required.
 
-**Object detection:**  
-Developed the custom script with the Python computer vision module **OpenCV** which filters the character that should be recognized from the other objects in the robot's surroundings. The script works on the principle of **character height and proportion**, together with the **dynamic noise filtering**.
+**Day/night target selection:**  
+At sunrise plus `DAY_OFFSET`, the target becomes **day brightness**. At sunset plus `NIGHT_OFFSET`, it becomes **night brightness**. With the current settings, night mode begins **one hour before sunset**. This is **two-level switching**, not a smooth brightness transition.
 
-**Maze mapping:**  
-Maze mapping is done in my Python module **Turtle**. Every maze field is properly recognized by the robot's **distance and color sensors**. After all maze fields are mapped, they are sent to the backend and the shortest path is calculated by the artificial intelligence searching algorithms such as: _Breadth-First Search, Depth-First Search, A Algorithm_\*...
+**Monitor brightness adjustment:**  
+`screen-brightness-control` reads the current brightness and sets the target only when a returned monitor level differs. Actual support depends on the monitor, Windows driver, and display-control capabilities.
 
 **Hardware choosing and connecting:**  
-The entire process of choosing **hardware platforms, supported protocols, and hardware capabilities** is done. E.g. the **video camera** must have a corresponding **focal length** otherwise it will be useless, **framerate, resolution, additional light source**, **motors** should have expected speed, **distance sensors** should be precise and able to work in a maze, **robot brain** should be able to do high computation payload and support Python…
+Use a **Windows PC** and a monitor supported by the brightness-control library. Some external monitors require **DDC/CI** to be enabled; compatibility is not guaranteed. No additional electronics or physical modifications are required.
 
 **Frame design and 3D printing:**  
-Entire robot is **3D designed** with **Fusion 360 CAD/CAM** software and **3D printed** with the **Ultimaker 3+** 3D printer with corresponding **filament, density**, etc.
+**Not applicable:** the project contains no mechanical design, CAD modelling, or 3D-printed parts.
 
 **Developing mechatronic code:**  
-**Arduino** is used to control all **sensors and actuators** on the robot except the **camera** which is controlled by **Raspberry Pi 4B** computer.
+**Not applicable to physical actuators:** the Python application controls supported monitor brightness through system-level software interfaces.
+
+**Installation and execution:**  
+Install **Python 3** and then the external dependencies:
+
+```powershell
+pip install astral screen-brightness-control
+```
+
+Set `LATITUDE`, `LONGITUDE`, and the brightness/offset values in `auto_brightness.py`, then launch:
+
+```powershell
+python auto_brightness.py
+```
+
+For an optional silent Windows `.exe` build:
+
+```powershell
+pip install pyinstaller
+pyinstaller --onefile --noconsole auto_brightness.py
+```
+
+The program continues running **until its process is stopped or Windows ends the session**. It does **not** automatically restart after reboot; configure **Task Scheduler** or Windows startup separately if needed. The current code does **not** provide a GUI, a schedule based on manually entered clock times, or automatic geographic location detection.
 
 ---
 
 ### ⚠️ Note:
 
-Achieving fully **autonomous drive** and **labyrinth mapping** requires extensive testing and calibration.  
-I would especially like to thank **Mirko Pezo** and **Stjepan Mikulic** for their exceptional contribution to the development of this project .
+**Replace the example coordinates** before use. The original code specifies `48.1486, 17.1077` (Bratislava area), which is not Rüschlikon. For Rüschlikon, use appropriately checked local coordinates; exact residential coordinates are unnecessary.  
+**Display compatibility varies**; test on your actual hardware. Running `python auto_brightness.py` in a terminal normally ties the process to that terminal. A console-free PyInstaller build hides the console but still requires startup configuration for automatic launch.  
+**No public project screenshots, demo video, or repository URL were supplied** for this application; the media positions below are retained as placeholders rather than showing unrelated material.
 
 ---
 
 ### 📸 Project Snapshots:
 
 <p align="center">
-  <img src="https://github.com/IvanSicaja/2019.08.01_GitHub_The-Projecting-an-Autonomous-Robot-of-the-Rescue-Maze-Category/blob/main/publish/2.0_Thumbnail_1.png?raw=true" 
-       alt="Rescue Maze Robot Preview 1" 
+  <!-- Screenshot 1: Application overview / intended workflow; replace placeholder path when image is available. -->
+  <!-- <img src="publish/2.0_Thumbnail_1.png" 
+       alt="Auto Brightness Preview 1: Application overview / intended workflow" 
        width="640" 
-       height="360">
+       height="360"> -->
+  <em>Screenshot 1 — Application overview / intended workflow: To be added</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/IvanSicaja/2019.08.01_GitHub_The-Projecting-an-Autonomous-Robot-of-the-Rescue-Maze-Category/blob/main/publish/2.0_Thumbnail_2.png?raw=true" 
-       alt="Rescue Maze Robot Preview 2" 
+  <!-- Screenshot 2: Configuration parameters; replace placeholder path when image is available. -->
+  <!-- <img src="publish/2.0_Thumbnail_2.png" 
+       alt="Auto Brightness Preview 2: Configuration parameters" 
        width="640" 
-       height="360">
+       height="360"> -->
+  <em>Screenshot 2 — Configuration parameters: To be added</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/IvanSicaja/2019.08.01_GitHub_The-Projecting-an-Autonomous-Robot-of-the-Rescue-Maze-Category/blob/main/publish/2.0_Thumbnail_3.png?raw=true" 
-       alt="Rescue Maze Robot Preview 3" 
+  <!-- Screenshot 3: Sunrise and sunset scheduling; replace placeholder path when image is available. -->
+  <!-- <img src="publish/2.0_Thumbnail_3.png" 
+       alt="Auto Brightness Preview 3: Sunrise and sunset scheduling" 
        width="640" 
-       height="360">
+       height="360"> -->
+  <em>Screenshot 3 — Sunrise and sunset scheduling: To be added</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/IvanSicaja/2019.08.01_GitHub_The-Projecting-an-Autonomous-Robot-of-the-Rescue-Maze-Category/blob/main/publish/2.0_Thumbnail_4.png?raw=true" 
-       alt="Rescue Maze Robot Preview 4" 
+  <!-- Screenshot 4: Daytime brightness behaviour; replace placeholder path when image is available. -->
+  <!-- <img src="publish/2.0_Thumbnail_4.png" 
+       alt="Auto Brightness Preview 4: Daytime brightness behaviour" 
        width="640" 
-       height="360">
+       height="360"> -->
+  <em>Screenshot 4 — Daytime brightness behaviour: To be added</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/IvanSicaja/2019.08.01_GitHub_The-Projecting-an-Autonomous-Robot-of-the-Rescue-Maze-Category/blob/main/publish/2.0_Thumbnail_5.png?raw=true" 
-       alt="Rescue Maze Robot Preview 5" 
+  <!-- Screenshot 5: Nighttime brightness behaviour; replace placeholder path when image is available. -->
+  <!-- <img src="publish/2.0_Thumbnail_5.png" 
+       alt="Auto Brightness Preview 5: Nighttime brightness behaviour" 
        width="640" 
-       height="360">
+       height="360"> -->
+  <em>Screenshot 5 — Nighttime brightness behaviour: To be added</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/IvanSicaja/2019.08.01_GitHub_The-Projecting-an-Autonomous-Robot-of-the-Rescue-Maze-Category/blob/main/publish/2.0_Thumbnail_6.png?raw=true" 
-       alt="Rescue Maze Robot Preview 6" 
+  <!-- Screenshot 6: Log output example; replace placeholder path when image is available. -->
+  <!-- <img src="publish/2.0_Thumbnail_6.png" 
+       alt="Auto Brightness Preview 6: Log output example" 
        width="640" 
-       height="360">
+       height="360"> -->
+  <em>Screenshot 6 — Log output example: To be added</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/IvanSicaja/2019.08.01_GitHub_The-Projecting-an-Autonomous-Robot-of-the-Rescue-Maze-Category/blob/main/publish/2.0_Thumbnail_7.png?raw=true" 
-       alt="Rescue Maze Robot Preview 7" 
+  <!-- Screenshot 7: Windows startup setup (optional); replace placeholder path when image is available. -->
+  <!-- <img src="publish/2.0_Thumbnail_7.png" 
+       alt="Auto Brightness Preview 7: Windows startup setup (optional)" 
        width="640" 
-       height="360">
+       height="360"> -->
+  <em>Screenshot 7 — Windows startup setup (optional): To be added</em>
 </p>
 
 ---
@@ -253,16 +251,18 @@ I would especially like to thank **Mirko Pezo** and **Stjepan Mikulic** for thei
 ### 🎥 Video Demonstration:
 
 <p align="center">
-  <a href="https://youtu.be/3sTD7d_HzC4">
-    <img src="https://img.youtube.com/vi/3sTD7d_HzC4/0.jpg" 
-         alt="Watch the demo" 
-         width="640" 
+  <!-- Add the Auto Brightness demo URL and thumbnail when available. -->
+  <!-- <a href="YOUR_AUTO_BRIGHTNESS_DEMO_URL">
+    <img src="YOUR_AUTO_BRIGHTNESS_VIDEO_THUMBNAIL_URL"
+         alt="Watch the Auto Brightness demo"
+         width="640"
          height="1000">
-  </a>
+  </a> -->
+  <em>Auto Brightness video demonstration: To be added</em>
 </p>
 
 ---
 
 ### 📣 Hashtags Section:
 
-**#AutonomousRobotics #RescueMaze #RoboticsEngineering #AI #ComputerVision #OCR #ObjectDetection #PathPlanning #CNN #TensorFlow #OpenCV #EmbeddedSystems #RaspberryPi #Arduino #3DPrinting #Fusion360 #Mechatronics #AutonomousNavigation #MachineLearning**
+**#AutoBrightness #MonitorBrightness #BrightnessControl #Python #WindowsAutomation #SunriseSunset #Astral #ScreenBrightnessControl #BackgroundService #Automation #TimeBasedAutomation #DisplayControl #PyInstaller #SoftwareEngineering**
